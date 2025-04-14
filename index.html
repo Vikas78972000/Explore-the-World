@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore The World</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Explore Travel Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="submitpage.html"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Explore the World</h1>
+            <p>Discover new places, experiences, and adventures with us.</p>
+            <a href="#booking" class="btn">Book Your Trip</a>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-container">
+            <div class="destination">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>The City of Lights awaits you with its culture and charm.</p>
+            </div>
+            <div class="destination">
+                <img src="new-york.jpg" alt="New York">
+                <h3>New York</h3>
+                <p>Experience the energy of the Big Apple.</p>
+            </div>
+            <div class="destination">
+                <img src="bali.jpg" alt="Bali">
+                <h3>Bali</h3>
+                <p>Unwind in the tropical paradise of Bali.</p>
+            </div>
+            
+            <div class="destination">
+                <img src="germany.jpeg" alt="Germany">
+                <h3>Germany</h3>
+                <p>The country of Adolf hitler.</p>
+            </div>
+            <div class="destination">
+                <img src="australia.jpg" alt="Australia">
+                <h3>Australia</h3>
+                <p>A Country which shape like a cat.</p>
+            </div>
+            <div class="destination">
+                <img src="london.jpg" alt="london">
+                <h3>London</h3>
+                <p>An Europian country that beautiful past, present and future.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <h2>Book Your Trip</h2>
+        <form id="booking-form" action="submitpage.html">
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="paris">Paris</option>
+                <option value="newyork">New York</option>
+                <option value="bali">Bali</option>
+                <option value="germany">Germany</option>
+                <option value="Australia">Australia</option>
+                <option value="london">London</option>
+            </select>
+
+            <label for="dates">Travel Dates:</label>
+            <input type="date" id="dates" name="dates" required>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="contact-name">Your Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Your Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Explore The World. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
